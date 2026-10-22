@@ -1,0 +1,132 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #26364b;
+}
+
+.signup-page {
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        180deg,
+        #e3edf4,
+        #fff3df,
+        #f8dfb9
+    );
+    position: relative;
+}
+
+.back-link {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    color: #193653;
+}
+
+.signup-heading {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.signup-heading h1 {
+    font-family: Georgia, serif;
+    font-size: 48px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.signup-heading p {
+    color: #697589;
+    font-size: 16px;
+}
+
+.signup-card {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border: 1px solid white;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.55);
+    box-shadow: 0 10px 35px #00000010;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.signup-form input {
+    width: 100%;
+    height: 52px;
+    padding: 0 15px;
+    border: 1px solid #d5d5d5;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+.signup-button {
+    height: 55px;
+    border: none;
+    border-radius: 15px;
+    background: #edbd70;
+    color: #26364b;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 22px 0;
+    color: #788294;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #d5d5d5;
+}
+
+.google-button {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #d5d5d5;
+    border-radius: 15px;
+    background: white;
+    cursor: pointer;
+}
+
+.login-text {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+.login-text a {
+    color: #bd8736;
+    text-decoration: none;
+}
+
+@media (max-width: 480px) {
+    .signup-heading h1 {
+        font-size: 38px;
+    }
+
+    .signup-card {
+        padding: 22px 18px;
+    }
+}
